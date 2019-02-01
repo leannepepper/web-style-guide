@@ -1,0 +1,15 @@
+.container {
+    width: 90%; 
+    margin: 0 auto;
+
+}
+
+.grid__col--3,
+.grid__col--9 {
+ display: flex; 
+ justify-content: center;
+}
+.grid__col--12 {
+    line-height: 1.5em;
+}
+

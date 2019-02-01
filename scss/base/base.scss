@@ -1,1 +1,9 @@
 // can only style universal selector, ul elements, p elements, and a elements 
+* {
+    box-sizing: border-box;
+    font-family: 'Helvetica Neue', sans-serif;
+    color: rgb(126, 126, 126);
+}
+a {
+    text-decoration: none;
+}
