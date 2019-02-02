@@ -2,8 +2,36 @@
 * {
     box-sizing: border-box;
     font-family: 'Helvetica Neue', sans-serif;
-    color: rgb(126, 126, 126);
 }
 a {
     text-decoration: none;
+}
+.card {
+    p{
+     line-height: 1.5em;
+     color:$text-color-base;
+     margin-top: 40px;
+    }
+}
+.headline--secondary {
+    font-weight: 300;
+    letter-spacing: 1px;
+    margin-top: 65px;
+}
+.headline--primary {
+    color: $accent-color;
+    margin-left: 10px;
+}
+p {
+    .link {
+        color: $accent-color-adjust-hue; 
+    }
+}
+.blockquote {
+    color: $text-color-base;
+    font-style: italic;
+    font-size: 24px;
+    border-left: 7px solid $accent-color; 
+    padding-left: 20px; 
+    border-radius: 5px;
 }

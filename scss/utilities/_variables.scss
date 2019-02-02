@@ -1,1 +1,4 @@
 // create variables for fonts, breakpoints, and colors
+$text-color-base: rgb(126, 126, 126);
+$accent-color:  rgba(30, 228, 168, 0.658); 
+$accent-color-adjust-hue: adjust-hue($accent-color, 40%);
