@@ -1,4 +1,27 @@
 .container {
-    width: 85%; 
-    margin: 0 auto;
+  @include center(85%);
+}
+.grid__row {
+    margin-top: 45px;
+}
+.grid__col--12.theme__colors {
+    @include col-layout(rgb(53, 207, 187));
+}
+.grid__col--6.theme__colors {
+    @include col-layout(rgba(17, 136, 192, 0.849));
+}
+.grid__col--4.theme__colors {
+    @include col-layout(rgba(71, 236, 248, 0.74));
+}
+.grid__col--3.theme__colors {
+    @include col-layout(rgb(201, 155, 228));
+}
+.grid__col--5.theme__colors {
+    @include col-layout(rgba(105, 209, 105, 0.733));
+}
+.grid__col--7.theme__colors {
+    @include col-layout(rgb(228, 132, 115));
+}
+.grid__col--8.theme__colors {
+    @include col-layout(rgb(224, 154, 110)); 
 }

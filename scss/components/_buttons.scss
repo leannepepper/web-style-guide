@@ -1,0 +1,27 @@
+.grid__col--12{
+    .theme__colors {
+        @include center(100%);
+        margin-top: 20px;
+    }
+}
+.grid__row {
+    .theme__colors{
+        @include center(100%); 
+        margin-top: 20px;
+    }
+}
+.btn--default {
+    @include btn($accent-color-adjust-hue);
+}
+.btn--success {
+    @include btn($btn-color-success);
+}
+.btn--error {
+    @include btn($btn-color-error); 
+}
+.btn--warning {
+    @include btn($btn-color-warning);
+}
+.btn--info {
+    @include btn($btn-color-info);
+}

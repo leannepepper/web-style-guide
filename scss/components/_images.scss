@@ -1,10 +1,16 @@
 //center the circles logo
-.grid__col--3 {
-    .link {
-        display: flex; 
-        justify-content: center;
-    }
+.img--logo {
+    @include center(auto);
+
 }
-// .img--avatar {
-//     margin-top: 30px;
-// }
+
+.img--avatar {
+    @include center(auto, 40px auto);
+  
+
+}
+.img--frame {
+    @include center(auto);
+    border: 1px solid $text-color-base;
+    padding: 12px;
+}
