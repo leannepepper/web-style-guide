@@ -231,7 +231,7 @@ a {
 
 .img--frame {
   margin: 0 auto;
-  width: auto;
+  width: 85%;
   display: block; }
 
 @media screen and (min-width: 769px) {
@@ -241,7 +241,8 @@ a {
     display: block; } }
 
 .nav {
-  padding: 0; }
+  padding: 0;
+  text-align: center; }
 
 @media screen and (min-width: 769px) {
   .nav__item {

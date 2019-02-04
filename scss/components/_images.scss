@@ -9,7 +9,7 @@
     }
 }
 .img--frame {
-    @include center(auto);
+    @include center(85%, 0 auto);
     @extend %img-frame;
 }
 .headline--secondary{
