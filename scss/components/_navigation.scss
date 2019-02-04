@@ -1,6 +1,6 @@
 
 .nav {
-    padding: 0; 
+    padding: 0;
 }
 .nav__item {
     padding: 15px 150px;
@@ -11,7 +11,11 @@
             border-radius: 5px;
             background-color:$accent-color; 
         }
-        &:hover a{
+        &:hover a {
             color:white;
         }
+     @media screen and (min-width: 769px) {
+         padding: 5px 10px;
+     } 
+     @include mq-display(inline-block);   
 }

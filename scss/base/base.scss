@@ -12,6 +12,9 @@ a {
      color:$text-color-base;
      margin-top: 40px;
     }
+    @media screen and(min-width: 769px){
+        max-width: 95%;
+    }
 }
 .headline--secondary {
     font-weight: 300;
@@ -30,7 +33,7 @@ p {
 .blockquote {
     color: $text-color-base;
     font-style: italic;
-    font-size: 24px;
+    font-size: 20px;
     border-left: 7px solid $accent-color; 
     padding-left: 20px; 
     border-radius: 5px;

@@ -10,9 +10,9 @@ Error: Undefined variable: "$text-color-base".
 12:      color:$text-color-base;
 13:      margin-top: 40px;
 14:     }
-15: }
-16: .headline--secondary {
-17:     font-weight: 300;
+15:     @media screen and(min-width: 769px){
+16:         max-width: 95%;
+17:     }
 
 Backtrace:
 scss/base/base.scss:12
@@ -80,4 +80,4 @@ scss/base/base.scss:12
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$text-color-base\".\A         on line 12 of scss/base/base.scss\A \A 7:     text-decoration: none;\A 8: }\A 9: .card {\A 10:     p{\A 11:      line-height: 1.5em;\A 12:      color:$text-color-base;\A 13:      margin-top: 40px;\A 14:     }\A 15: }\A 16: .headline--secondary {\A 17:     font-weight: 300;"; }
+  content: "Error: Undefined variable: \"$text-color-base\".\A         on line 12 of scss/base/base.scss\A \A 7:     text-decoration: none;\A 8: }\A 9: .card {\A 10:     p{\A 11:      line-height: 1.5em;\A 12:      color:$text-color-base;\A 13:      margin-top: 40px;\A 14:     }\A 15:     @media screen and(min-width: 769px){\A 16:         max-width: 95%;\A 17:     }"; }

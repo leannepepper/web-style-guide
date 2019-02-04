@@ -6,11 +6,18 @@
 
 .img--avatar {
     @include center(auto, 40px auto);
-  
-
+    @media screen and (min-width: 769px) {
+        @include center(auto, 0 auto);
+    }
 }
 .img--frame {
     @include center(auto);
     border: 1px solid $text-color-base;
     padding: 12px;
+}
+
+.headline--secondary{
+    @media screen and (min-width: 769px) {
+        @include center(auto, 21px auto);
+    }
 }

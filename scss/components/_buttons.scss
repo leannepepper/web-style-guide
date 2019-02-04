@@ -1,27 +1,33 @@
-.grid__col--12{
-    .theme__colors {
-        @include center(100%);
-        margin-top: 20px;
-    }
-}
+//this style the login button 
 .grid__row {
     .theme__colors{
         @include center(100%); 
         margin-top: 20px;
     }
 }
-.btn--default {
+// this styles the buttons section to be flex
+.grid__row {
+    .grid__col--12{
+        @include mq-display(flex){
+             width: 100%;
+        }
+        .theme__colors{
+            margin: 15px;
+        }
+    }
+}
+.btn--default.theme__colors {
     @include btn($accent-color-adjust-hue);
 }
-.btn--success {
+.btn--success.theme__colors {
     @include btn($btn-color-success);
 }
-.btn--error {
+.btn--error.theme__colors {
     @include btn($btn-color-error); 
 }
-.btn--warning {
+.btn--warning.theme__colors {
     @include btn($btn-color-warning);
 }
-.btn--info {
+.btn--info.theme__colors {
     @include btn($btn-color-info);
 }

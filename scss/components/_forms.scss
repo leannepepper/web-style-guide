@@ -12,7 +12,12 @@
             background-color:lightgoldenrodyellow;
         }
 }
-// label set to transparent to make sure screen readers can still see the element. 
+// label set to transparent to make sure screen readers can still read the element. 
 .form__label--hidden {
     color: transparent; 
+}
+.form {
+    @media screen and(min-width: 769px){
+        width: 300px;
+    }
 }
