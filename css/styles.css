@@ -94,7 +94,7 @@
   @media screen and (min-width: 769px) {
     .grid__row {
       display: flex;
-      justify-content: space-between; } }
+      justify-content: space-around; } }
 
 .grid__col--12.theme__colors {
   padding: 12px;
@@ -165,6 +165,10 @@
   margin: 10px;
   width: 66.67%;
   text-align: center; }
+
+@media screen and (min-width: 769px) {
+  .headline--secondary + .grid__row .grid__col--12.theme__colors {
+    display: inline-block; } }
 
 .img--logo {
   margin: 0 auto;

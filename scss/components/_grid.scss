@@ -6,7 +6,7 @@
 .grid__row {
     margin-top: 25px;
     @include mq-display(flex){
-        justify-content: space-between;
+        justify-content: space-around; 
     } 
 }
 // to calculate grid widths, do 12/col--num = x, 100/x= your percentage. 
@@ -46,4 +46,12 @@
     width: 66.67%;
     text-align: center;
 }
-
+// targeting .grid__col--12 in grid systems in order to center the text in desktop view. 
+.headline--secondary+.grid__row {
+    .grid__col--12.theme__colors {
+        @media screen and (min-width: 769px){
+            display: inline-block; 
+        }
+    }
+}
+ 
