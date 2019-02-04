@@ -21,9 +21,10 @@
     color: $col-text-color;
     font-size: 14px;
     margin: 10px;
+
 }
 @mixin mq-display($display) {
-    @media screen and (min-width: 769px) {
+    @media screen and (min-width: $desktop-view-size) {
         @if($display=='flex'){ 
             display: flex;
             @content;
@@ -34,7 +35,7 @@
     }  
 }
 @mixin mq-max-width {
-    @media screen and (min-width: 769px) {
+    @media screen and (min-width: $desktop-view-size) {
        max-width: 1000px;
     } 
 }

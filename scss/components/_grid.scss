@@ -4,7 +4,7 @@
       
 }
 .grid__row {
-    margin-top: 25px;
+    margin-top: 35px;
     @include mq-display(flex){
         justify-content: space-around; 
     } 
@@ -12,44 +12,57 @@
 // to calculate grid widths, do 12/col--num = x, 100/x= your percentage. 
 .grid__col--12.theme__colors {
     @include col-layout(rgb(53, 207, 187));
-    width: 100%;
-    text-align: center;
+    @media screen and (min-width: $desktop-view-size){
+        width: 100%;
+        text-align: center;
+    };
 }
 .grid__col--6.theme__colors {
     @include col-layout(rgba(17, 136, 192, 0.849));
-    width: 50%;
-    text-align: center;
+    @media screen and (min-width: $desktop-view-size){
+        width: 50%;
+        text-align: center;
+    };
 }
 .grid__col--4.theme__colors {
     @include col-layout(rgba(71, 236, 248, 0.74));
-    width: 33.33%;
-    text-align: center;
+    @media screen and (min-width: $desktop-view-size){
+        width: 33.33%;
+        text-align: center;
+    };
 }
 .grid__col--3.theme__colors {
     @include col-layout(rgb(201, 155, 228));
-    width: 25%;
-    text-align: center;
+    @media screen and (min-width: $desktop-view-size){
+        width: 25%;
+        text-align: center;
+    };
 }
 .grid__col--5.theme__colors {
     @include col-layout(rgba(105, 209, 105, 0.733));
-    width: 41.6%;
-    text-align: center;
+    @media screen and (min-width: $desktop-view-size){
+        width: 41.6%;
+        text-align: center;
+    };
 }
 .grid__col--7.theme__colors {
     @include col-layout(rgb(228, 132, 115));
-    width: 58.8%;
-    text-align: center;
-
+    @media screen and (min-width: $desktop-view-size){
+        width: 58.8%;
+        text-align: center;
+    };
 }
 .grid__col--8.theme__colors {
     @include col-layout(rgb(224, 154, 110)); 
-    width: 66.67%;
-    text-align: center;
+    @media screen and (min-width: $desktop-view-size){
+        width: 66.67%;
+        text-align: center;
+    };
 }
 // targeting .grid__col--12 in grid systems in order to center the text in desktop view. 
 .headline--secondary+.grid__row {
     .grid__col--12.theme__colors {
-        @media screen and (min-width: 769px){
+        @media screen and (min-width: $desktop-view-size){
             display: inline-block; 
         }
     }

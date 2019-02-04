@@ -1,40 +1,8 @@
 // can only style universal selector, ul elements, p elements, and a elements 
 * {
     box-sizing: border-box;
-    font-family: 'Helvetica Neue', sans-serif;
+    font-family: $text-font-primary;
 }
 a {
-    text-decoration: none;
-}
-.card {
-    p{
-     line-height: 1.5em;
-     color:$text-color-base;
-     margin-top: 40px;
-    }
-    @media screen and(min-width: 769px){
-        max-width: 95%;
-    }
-}
-.headline--secondary {
-    font-weight: 300;
-    letter-spacing: 1px;
-    margin-top: 65px;
-}
-.headline--primary {
-    color: $accent-color;
-    margin-left: 10px;
-}
-p {
-    .link {
-        color: $accent-color-adjust-hue; 
-    }
-}
-.blockquote {
-    color: $text-color-base;
-    font-style: italic;
-    font-size: 20px;
-    border-left: 7px solid $accent-color; 
-    padding-left: 20px; 
-    border-radius: 5px;
+    @extend %link; 
 }

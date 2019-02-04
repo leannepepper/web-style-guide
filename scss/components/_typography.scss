@@ -5,3 +5,31 @@
         color: $text-color-base;
     }
 }
+.headline--secondary {
+    @extend %headline-secondary;
+}
+.headline--primary {
+    @extend %headline-primary;
+}
+.card {
+    @media screen and(min-width: $desktop-view-size){
+        max-width: 95%;
+    }
+}
+p {
+    line-height: 1.5em;
+    color:$text-color-base;
+    margin-top: 40px;
+
+        .link {
+            color: $accent-color-adjust-hue; 
+        }
+}
+.blockquote {
+    color: $text-color-base;
+    font-style: italic;
+    font-size: 20px;
+    border-left: 7px solid $accent-color; 
+    padding-left: 20px; 
+    border-radius: 5px;
+}

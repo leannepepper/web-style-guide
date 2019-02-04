@@ -1,23 +1,19 @@
 //center the circles logo
 .img--logo {
     @include center(auto);
-
 }
-
 .img--avatar {
     @include center(auto, 40px auto);
-    @media screen and (min-width: 769px) {
+    @media screen and (min-width: $desktop-view-size) {
         @include center(auto, 0 auto);
     }
 }
 .img--frame {
     @include center(auto);
-    border: 1px solid $text-color-base;
-    padding: 12px;
+    @extend %img-frame;
 }
-
 .headline--secondary{
-    @media screen and (min-width: 769px) {
+    @media screen and (min-width: $desktop-view-size) {
         @include center(auto, 21px auto);
     }
 }

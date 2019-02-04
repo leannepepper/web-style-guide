@@ -1,35 +1,21 @@
 /*
-Error: Undefined variable: "$text-color-base".
-        on line 12 of scss/base/base.scss
+Error: Undefined variable: "$text-font-primary".
+        on line 4 of scss/base/base.scss
 
-7:     text-decoration: none;
+1: // can only style universal selector, ul elements, p elements, and a elements 
+2: * {
+3:     box-sizing: border-box;
+4:     font-family: $text-font-primary;
+5: }
+6: a {
+7:     @extend %link; 
 8: }
-9: .card {
-10:     p{
-11:      line-height: 1.5em;
-12:      color:$text-color-base;
-13:      margin-top: 40px;
-14:     }
-15:     @media screen and(min-width: 769px){
-16:         max-width: 95%;
-17:     }
 
 Backtrace:
-scss/base/base.scss:12
+scss/base/base.scss:4
 /Library/Ruby/Gems/2.3.0/gems/sass-3.7.3/lib/sass/script/tree/variable.rb:49:in `_perform'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.7.3/lib/sass/script/tree/node.rb:50:in `perform'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:398:in `visit_prop'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:36:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.3/lib/sass/stack.rb:79:in `block in with_base'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.3/lib/sass/stack.rb:135:in `with_frame'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.3/lib/sass/stack.rb:79:in `with_base'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:158:in `visit'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:440:in `block (2 levels) in visit_rule'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:440:in `map'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:440:in `block in visit_rule'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:179:in `with_environment'
-/Library/Ruby/Gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:438:in `visit_rule'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/visitors/base.rb:36:in `visit'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.7.3/lib/sass/tree/visitors/perform.rb:158:in `block in visit'
 /Library/Ruby/Gems/2.3.0/gems/sass-3.7.3/lib/sass/stack.rb:79:in `block in with_base'
@@ -80,4 +66,4 @@ scss/base/base.scss:12
 body:before {
   white-space: pre;
   font-family: monospace;
-  content: "Error: Undefined variable: \"$text-color-base\".\A         on line 12 of scss/base/base.scss\A \A 7:     text-decoration: none;\A 8: }\A 9: .card {\A 10:     p{\A 11:      line-height: 1.5em;\A 12:      color:$text-color-base;\A 13:      margin-top: 40px;\A 14:     }\A 15:     @media screen and(min-width: 769px){\A 16:         max-width: 95%;\A 17:     }"; }
+  content: "Error: Undefined variable: \"$text-font-primary\".\A         on line 4 of scss/base/base.scss\A \A 1: // can only style universal selector, ul elements, p elements, and a elements \A 2: * {\A 3:     box-sizing: border-box;\A 4:     font-family: $text-font-primary;\A 5: }\A 6: a {\A 7:     @extend %link; \A 8: }"; }
