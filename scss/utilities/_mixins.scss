@@ -7,7 +7,7 @@
 @mixin btn($background-color, $color:white){
     display: block;
     margin-top: 25px;
-    padding: 12px;
+    padding: 15px;
     border-radius: 5px;
     background-color: $background-color;
     color: $color;
@@ -15,12 +15,13 @@
     text-transform: uppercase;
 }
 @mixin col-layout($background-color){
-    padding: 12px;
+    padding: 10px;
     border-radius: 5px;
     background-color: $background-color;
     color: $col-text-color;
     font-size: 14px;
     margin: 10px;
+    overflow: hidden;
 
 }
 @mixin mq-display($display) {

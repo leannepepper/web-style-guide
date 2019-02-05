@@ -1,7 +1,7 @@
 //this style the login button 
 .grid__row {
     .theme__colors{
-        @include center(100%); 
+        @include center(95%, 0 auto); 
         margin-top: 20px;
     }
 }
@@ -11,8 +11,10 @@
         @include mq-display(flex){
              width: 100%;
         }
-        .theme__colors{
-            margin: 15px;
+        .theme__colors {
+            @media screen and (min-width: $desktop-view-size){
+                margin: 5px;
+            }
         }
     }
 }
