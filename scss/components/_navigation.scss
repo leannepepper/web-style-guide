@@ -1,7 +1,7 @@
 
 .nav {
     padding: 0;
-    text-align: center;
+    align-content: center;
 }
 .nav__item {
     @extend %nav-items;
